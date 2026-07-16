@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cykk-audio-transcriber"
+version = "0.1.0"
+description = "CLI for audio transcription, subtitle export, and optional translation."
+readme = { file = "README.pypi.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "chenyk", email = "752534707@qq.com" }
+]
+keywords = ["transcription", "speech-to-text", "whisper", "audio", "subtitles"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Environment :: Console",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = []
+
+[project.optional-dependencies]
+local = [
+  "openai-whisper",
+  "torch",
+  "numpy",
+]
+api = [
+  "openai>=1.35.0",
+  "pydub>=0.25.1",
+]
+translate = [
+  "deepl>=1.18.0",
+]
+all = [
+  "openai-whisper",
+  "torch",
+  "numpy",
+  "openai>=1.35.0",
+  "pydub>=0.25.1",
+  "deepl>=1.18.0",
+]
+test = [
+  "pytest>=8.0",
+  "build>=1.2.2",
+  "twine>=5.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/cykk/audiototext-pypi"
+Repository = "https://github.com/cykk/audiototext-pypi"
+Issues = "https://github.com/cykk/audiototext-pypi/issues"
+
+[project.scripts]
+audiototext = "audiototext.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
