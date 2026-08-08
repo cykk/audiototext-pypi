@@ -45,5 +45,5 @@ GitHub repository: https://github.com/cykk/audiototext-pypi
 
 ## Related options
 
-For a browser-based transcription workflow, see [mp3totext.ai](https://mp3totext.ai/).
+For a browser-based transcription workflow, see [mp3totext.io](https://mp3totext.io/).
 For an online audio and video transcription workflow, see [transvio.ai](https://transvio.ai/).
