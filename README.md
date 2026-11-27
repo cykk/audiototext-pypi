@@ -62,8 +62,6 @@ The `--output-formats` option accepts a comma-separated list of: `txt`, `srt`, `
 ## Related options
 
 For a browser-based transcription workflow, see [mp3totext.io](https://mp3totext.io/).
-For online video-to-text transcription, see [mp4totext.ai](https://mp4totext.ai/).
-For an online audio and video transcription workflow, see [AnyToTranscript](https://anytotranscript.com/).
 
 ## Publishing
 
